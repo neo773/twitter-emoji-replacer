@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "iOS Emoji for Twitter",
+  "name": "Apple Emojis for Twitter Web",
   "description": "Replace Twitter's default emojis with native Apple's emojis for a more consistent and polished look.",
   "version": "1.0",
   "permissions": ["declarativeNetRequest"],
