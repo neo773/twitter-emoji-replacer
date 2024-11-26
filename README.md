@@ -1,5 +1,7 @@
 # Apple Emojis for Twitter Web
 
+![image](./assets/images/icons/icon128.png)
+
 A Chrome extension that replaces Twitter's default emojis with native Apple's emojis for a more consistent and polished look.
 
 
