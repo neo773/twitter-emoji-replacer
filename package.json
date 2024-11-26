@@ -1,7 +1,7 @@
 {
   "name": "ios-emoji-for-twitter",
   "scripts": {
-    "build": "tsup --format esm"
+    "build": "tsup ./src --format esm"
   },
   "dependencies": {},
   "devDependencies": {

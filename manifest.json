@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "iOS Emoji for Twitter",
-  "icon": "./assets/images/icon.png",
+  "description": "Replace Twitter's default emojis with native Apple's emojis for a more consistent and polished look.",
   "version": "1.0",
   "permissions": ["declarativeNetRequest"],
   "host_permissions": ["https://twitter.com/*", "https://x.com/*"],
@@ -13,5 +13,11 @@
   ],
   "background": {
     "service_worker": "./dist/background.js"
+  },
+  "icons": {
+    "16": "./assets/images/icons/icon16.png",
+    "32": "./assets/images/icons/icon32.png",
+    "48": "./assets/images/icons/icon48.png",
+    "128": "./assets/images/icons/icon128.png"
   }
 }
