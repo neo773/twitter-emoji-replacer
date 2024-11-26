@@ -1,4 +1,4 @@
-# iOS Emoji for Twitter
+# Apple Emojis for Twitter Web
 
 A Chrome extension that replaces Twitter's default emojis with native Apple's emojis for a more consistent and polished look.
 
