@@ -37,6 +37,10 @@ const convertToIOSEmojiUrl = (twitterUrl: string): string => {
  * └──────────────────────────────────────────────────┘
  */
 const handleEmojiLoadError = (img: HTMLImageElement): void => {
+  // Get retry count from data attribute, default to 0
+  const retryCount = Number(img.dataset.retryCount || 0);
+  if (retryCount >= 1) return; // Only try once
+
   const fileName = img.src.split("/").pop();
   if (!fileName) return;
 
@@ -52,6 +56,8 @@ const handleEmojiLoadError = (img: HTMLImageElement): void => {
     .filter(Boolean)
     .join("_");
 
+  // Increment retry count
+  img.dataset.retryCount = String(retryCount + 1);
   img.src = img.src.replace(baseEmoji, reorderedEmoji);
 };
 
