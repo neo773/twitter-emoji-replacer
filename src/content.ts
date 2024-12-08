@@ -6,9 +6,13 @@ const createEmojiSpan = (emojiAlt: string): HTMLSpanElement => {
   const span = document.createElement("span");
   Object.assign(span.style, {
     fontSize: "1.1em",
-    display: "inline-block",
-    verticalAlign: "middle",
+    display: "inline-flex",
+    alignItems: "center",
+    justifyContent: "center",
     width: "20px",
+    height: "20px",
+    lineHeight: "1",
+    verticalAlign: "middle",
   });
 
   span.setAttribute("aria-label", emojiAlt);
